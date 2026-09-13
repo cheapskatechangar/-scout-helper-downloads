@@ -2,7 +2,7 @@
 
 Created by **CheapskateChangar**.
 
-**Latest release:** Portable 3.1.2 Â· Sep 13, 2026 5:31 PM -04:00
+**Latest release:** Portable 3.1.2 · Sep 13, 2026 5:31 PM -04:00
 
 [Download Portable 3.1.2 ZIP](https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/ScoutPermissionHelper-Portable-3.1.2.zip) · [Project website](https://scout-prompt-approver.vercel.app/) · [Release notes](RELEASE-NOTES.md)
 
@@ -61,10 +61,12 @@ The [SHA-256 checksum](dist/ScoutPermissionHelper-Portable-3.1.2.zip.sha256) is 
 Get-FileHash .\ScoutPermissionHelper-Portable-3.1.2.zip -Algorithm SHA256
 ```
 
-$1560ec0757976416fc5163134c56031ac7d2b2eaea2cc1abeb338c72dbd4071c6`
+Expected SHA-256:
+
+`560ec0757976416fc5163134c56031ac7d2b2eaea2cc1abeb338c72dbd4071c6`
 
 ## Validation status
 
-Pilot build. The 3.1.0 behavior baseline passed 207 automated logic checks on PowerShell 7.6.6 / Linux. The 3.1.1 branding change passed script parsing, embedded-logo byte comparison, and two-file ZIP validation. Native Windows rendering, clipboard, and broader live Scout acceptance remain pending.
+Portable 3.1.2 passed the focused 3.1.2 regression checks, AI enhancement regression checks, deterministic two-file ZIP validation, and live Windows acceptance for the updated UI and emergency-pause behavior.
 
 The project is independent and is not affiliated with or endorsed by Microsoft.
