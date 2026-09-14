@@ -1,7 +1,7 @@
 {
-    "version":  "3.1.2",
-    "released_at":  "2026-09-13T17:31:49.8514517-04:00",
-    "download_url":  "https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/ScoutPermissionHelper-Portable-3.1.2.zip",
-    "checksum_url":  "https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/ScoutPermissionHelper-Portable-3.1.2.zip.sha256",
-    "sha256":  "560ec0757976416fc5163134c56031ac7d2b2eaea2cc1abeb338c72dbd4071c6"
+    "version":  "3.1.3",
+    "released_at":  "2026-09-14T15:21:16.7413293-04:00",
+    "download_url":  "https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/ScoutPermissionHelper-Portable-3.1.3.zip",
+    "checksum_url":  "https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/ScoutPermissionHelper-Portable-3.1.3.zip.sha256",
+    "sha256":  "f766df6d8dbf6bf8bf1150025f61669a1d3480ef4b28bbfe591aa25b7277a1d2"
 }

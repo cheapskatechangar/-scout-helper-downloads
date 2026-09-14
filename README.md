@@ -2,9 +2,9 @@
 
 Created by **CheapskateChangar**.
 
-**Latest release:** Portable 3.1.2 · Sep 13, 2026 5:31 PM -04:00
+**Latest release:** Portable 3.1.3 Â· Sep 14, 2026 3:21 PM -04:00
 
-[Download Portable 3.1.2 ZIP](https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/ScoutPermissionHelper-Portable-3.1.2.zip) · [Project website](https://scout-prompt-approver.vercel.app/) · [Release notes](RELEASE-NOTES.md)
+[Download Portable 3.1.3 ZIP](https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/ScoutPermissionHelper-Portable-3.1.3.zip) · [Project website](https://scout-prompt-approver.vercel.app/) · [Release notes](RELEASE-NOTES.md)
 
 Public downloads for the Windows Scout Permission Helper. No GitHub sign-in is required. Development history, internal notes, and run logs are not included here. The ZIP contains readable PowerShell and batch scripts.
 
@@ -55,15 +55,15 @@ Logs can contain local paths, process identities, and exception diagnostics. Rev
 
 ## Verify the download
 
-The [SHA-256 checksum](dist/ScoutPermissionHelper-Portable-3.1.2.zip.sha256) is published beside the ZIP. In PowerShell:
+The [SHA-256 checksum](dist/ScoutPermissionHelper-Portable-3.1.3.zip.sha256) is published beside the ZIP. In PowerShell:
 
 ```powershell
-Get-FileHash .\ScoutPermissionHelper-Portable-3.1.2.zip -Algorithm SHA256
+Get-FileHash .\ScoutPermissionHelper-Portable-3.1.3.zip -Algorithm SHA256
 ```
 
 Expected SHA-256:
 
-`560ec0757976416fc5163134c56031ac7d2b2eaea2cc1abeb338c72dbd4071c6`
+`f766df6d8dbf6bf8bf1150025f61669a1d3480ef4b28bbfe591aa25b7277a1d2`
 
 ## Validation status
 
