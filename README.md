@@ -2,9 +2,9 @@
 
 Created by **CheapskateChangar**.
 
-**Latest release:** Portable 3.1.3 | Sep 14, 2026 3:21 PM -04:00
+**STABLE release:** Portable 3.1.4 | Sep 14, 2026 7:25 PM -04:00
 
-[Download Portable 3.1.3 ZIP](https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/ScoutPermissionHelper-Portable-3.1.3.zip) · [Project website](https://scout-prompt-approver.vercel.app/) · [Release notes](RELEASE-NOTES.md)
+[Download Portable 3.1.4 ZIP](https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/ScoutPermissionHelper-Portable-3.1.4.zip) · [Project website](https://scout-prompt-approver.vercel.app/) · [Release notes](RELEASE-NOTES.md)
 
 Public downloads for the Windows Scout Permission Helper. No GitHub sign-in is required. Development history, internal notes, and run logs are not included here. The ZIP contains readable PowerShell and batch scripts.
 
