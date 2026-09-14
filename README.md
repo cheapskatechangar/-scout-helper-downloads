@@ -2,7 +2,7 @@
 
 Created by **CheapskateChangar**.
 
-**Latest release:** Portable 3.1.3 Â· Sep 14, 2026 3:21 PM -04:00
+**Latest release:** Portable 3.1.3 | Sep 14, 2026 3:21 PM -04:00
 
 [Download Portable 3.1.3 ZIP](https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/ScoutPermissionHelper-Portable-3.1.3.zip) · [Project website](https://scout-prompt-approver.vercel.app/) · [Release notes](RELEASE-NOTES.md)
 
@@ -67,6 +67,6 @@ Expected SHA-256:
 
 ## Validation status
 
-Portable 3.1.2 passed the focused 3.1.2 regression checks, AI enhancement regression checks, deterministic two-file ZIP validation, and live Windows acceptance for the updated UI and emergency-pause behavior.
+Pilot build. Portable 3.1.3 includes the 3.1.2 status, emergency-pause, summary, optional-AI, generic-window-label, and branding work plus a Windows shutdown hotfix so closing the app no longer races the UI timer or attempts to unregister a hotkey after the form handle is gone.
 
 The project is independent and is not affiliated with or endorsed by Microsoft.
