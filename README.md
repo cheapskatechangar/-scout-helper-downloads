@@ -1,72 +1,50 @@
-# Scout Permission Helper | Portable
+# Permission Helper | Windows downloads
 
 Created by **CheapskateChangar**.
 
-**STABLE release:** Portable 3.1.4 | Sep 14, 2026 7:25 PM -04:00
+| Channel | Version | Download |
+|---|---|---|
+| Beta | 4.0.0-beta.6 | [Permission Helper Beta 6](https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/PermissionHelper-Portable-4.0.0-beta.6.zip) |
+| Stable, Scout-only | 3.1.4 | [Scout Permission Helper 3.1.4](https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/ScoutPermissionHelper-Portable-3.1.4.zip) |
 
-[Download Portable 3.1.4 ZIP](https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/ScoutPermissionHelper-Portable-3.1.4.zip) · [Project website](https://scout-prompt-approver.vercel.app/) · [Release notes](RELEASE-NOTES.md)
+[Project website](https://scout-prompt-approver.vercel.app/) · [What's new in Beta 6](BETA-6.md) · [Release history](RELEASE-NOTES.md)
 
-Public downloads for the Windows Scout Permission Helper. No GitHub sign-in is required. Development history, internal notes, and run logs are not included here. The ZIP contains readable PowerShell and batch scripts.
+Public ZIP downloads require no GitHub sign-in. The packages contain readable PowerShell and batch scripts.
 
-## Quick start
+## What's new in Beta 6
 
-1. Download the ZIP above, then extract both files into the same local folder.
-2. Open Microsoft Scout, then double-click `Start-ScoutPermissionHelper.bat`.
-3. Select the intended Scout window and permission labels.
-4. Leave **Detect only** checked for your first run. Select **Start** to see matches without clicking.
-5. To enable selected-button clicking, select **Stop**, clear **Detect only**, then select **Start** again.
+Beta 6 adds Microsoft 365 Copilot Cowork to the original Scout helper. Choose a window first to see the appropriate options: Allow for Scout, or Create and Approve for Cowork. It supports changing confirmation-card titles, a compact activity view, and scan diagnostics. Pause/Resume/Stop, emergency pause, limits, and duplicate protection remain.
 
-Keep these two files together:
+**AI follow-ups are still manual. Automatic “next” messages are not included.**
 
-- `Start-ScoutPermissionHelper.bat`
-- `ScoutPermissionHelper.Portable.ps1`
+## Start Beta 6
 
-**Pause** suspends new actions after acknowledgement; **Resume** continues; **Stop** ends the helper run. Closing the interface stops its worker. Minimizing keeps it running. Stop before changing settings.
+1. Close any older helper and extract both files from the Beta ZIP.
+2. Open Scout or the Microsoft 365 Copilot desktop app.
+3. Run `Start-PermissionHelper.bat` and select the intended window.
+4. Choose the permission buttons and start with Detect only checked.
+5. To enable clicking, Stop, clear Detect only, then Start again.
 
-## Requirements and limits
+Keep `Start-PermissionHelper.bat` and `PermissionHelper.Portable.ps1` together. The stable 3.1.4 package uses the older `Start-ScoutPermissionHelper.bat` launcher and supports Scout only.
 
-Windows 10 or 11, Windows PowerShell 5.1, an unlocked interactive desktop, and the Microsoft Scout desktop app are required. No Power Automate, installer, extra modules, or administrator elevation is required. The scripts are unsigned; your organization's script controls can block them. Follow your approved signing or allowlisting process.
+Windows 10/11, Windows PowerShell 5.1, and an unlocked desktop are required. Stop before changing settings. Closing the helper stops its worker; minimizing keeps it running.
 
-The helper recognizes three exact labels in the selected Scout window:
+## Scope and logs
 
-- Allow for this session
-- Allow all file reads this session
-- Allow all file writes this session
+Cowork's selected Create/Approve confirmations are handled regardless of the operation or displayed risk label. Matching-card and selected-window checks apply. Always allow and menu controls are excluded. Use the helper for work whose scope you have reviewed. A successful button invocation does not establish backend success.
 
-File-read and file-write choices start unchecked. Idle, run-duration, and request limits bound each run. Default limits are 5 idle minutes, 60 run minutes, and 100 invoke requests. Paused time counts toward the run-duration limit.
+Open logs shows local records under `%LOCALAPPDATA%\\ScoutPermissionHelper\\Portable\\Runs`. Diagnostics can include control labels, local paths, and process identities. Logs remain until removed.
 
-**A button label does not identify or validate the underlying operation.** This utility automates selected permission-button interactions; it does not provide approval from Microsoft or your organization. Use it only where permitted and for work whose scope you have reviewed. An invoked button or a changed prompt is not proof of backend success.
+## Verify Beta 6
 
-## Optional AI enhancement
-
-Enable the checkbox for one editable follow-up message and a maximum count, default 3. Copy the message, paste and send it in the intended Scout conversation, then select **I sent it in Scout** to count the handoff. Copying does not count as sending.
-
-Detect only and permission choices remain independent. The ordinary idle/run/request limits still apply. Pause and Stop also gate follow-up actions, and reaching the follow-up cap stops the helper.
-
-**Automatic Scout completion detection and message sending are not implemented.** This is a manual follow-up feature, not unattended AI continuation. Stopping the helper does not cancel Scout's own task or recall text already copied or sent.
-
-## Logs and privacy
-
-Use **Open logs** to view run records under:
-
-`%LOCALAPPDATA%\ScoutPermissionHelper\Portable\Runs\<run-id>`
-
-Logs can contain local paths, process identities, and exception diagnostics. Review them before sharing. Follow-up message content is not written to run configuration or activity logs. Explicitly copied text may remain in clipboard history. Logs remain until you remove them.
-
-## Verify the download
-
-The [SHA-256 checksum](dist/ScoutPermissionHelper-Portable-3.1.3.zip.sha256) is published beside the ZIP. In PowerShell:
+[Beta checksum file](https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/PermissionHelper-Portable-4.0.0-beta.6.zip.sha256)
 
 ```powershell
-Get-FileHash .\ScoutPermissionHelper-Portable-3.1.3.zip -Algorithm SHA256
+Get-FileHash .\\PermissionHelper-Portable-4.0.0-beta.6.zip -Algorithm SHA256
 ```
 
-Expected SHA-256:
+Expected: `a3b783491f7c1cad05582e019e7bb963c69422ef6f7733bfd9b85a44f336d769`
 
-`f766df6d8dbf6bf8bf1150025f61669a1d3480ef4b28bbfe591aa25b7277a1d2`
+[Stable 3.1.4 checksum](https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/ScoutPermissionHelper-Portable-3.1.4.zip.sha256)
 
-## Validation status
-
-Pilot build. Portable 3.1.3 includes the 3.1.2 status, emergency-pause, summary, optional-AI, generic-window-label, and branding work plus a Windows shutdown hotfix so closing the app no longer races the UI timer or attempts to unregister a hotkey after the form handle is gone.
-
-The project is independent and is not affiliated with or endorsed by Microsoft.
+Independent project. Not affiliated with or endorsed by Microsoft.
