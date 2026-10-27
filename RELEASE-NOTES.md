@@ -1,3 +1,7 @@
+# 4.0.0 stable — October 27, 2026
+
+Maintainer-confirmed Scout hidden-permission fix promoted to stable. Stable and beta update feeds offer 4.0.0. See [4.0.0 notes](RELEASE-4.0.0.md) for upgrade instructions and validation scope.
+
 # Permission Helper Beta 6
 
 Version: 4.0.0-beta.6. Channel: BETA.

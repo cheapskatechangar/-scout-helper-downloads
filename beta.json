@@ -1,8 +1,8 @@
 {
-  "version": "4.0.0-beta.6",
-  "channel": "BETA",
-  "released_at": "2026-09-15T01:14:08.202Z",
-  "download_url": "https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/PermissionHelper-Portable-4.0.0-beta.6.zip",
-  "checksum_url": "https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/PermissionHelper-Portable-4.0.0-beta.6.zip.sha256",
-  "sha256": "a3b783491f7c1cad05582e019e7bb963c69422ef6f7733bfd9b85a44f336d769"
+  "version": "4.0.0",
+  "channel": "STABLE",
+  "released_at": "2026-10-27T16:58:22.7588265+00:00",
+  "download_url": "https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/PermissionHelper-Portable-4.0.0.zip",
+  "checksum_url": "https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/PermissionHelper-Portable-4.0.0.zip.sha256",
+  "sha256": "e4ccbb0ef94ca44a135ade9b722b0cd1520748209abaf244f77a86571578f455"
 }

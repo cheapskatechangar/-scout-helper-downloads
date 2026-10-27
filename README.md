@@ -2,49 +2,36 @@
 
 Created by **CheapskateChangar**.
 
-| Channel | Version | Download |
-|---|---|---|
-| Beta | 4.0.0-beta.6 | [Permission Helper Beta 6](https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/PermissionHelper-Portable-4.0.0-beta.6.zip) |
-| Stable, Scout-only | 3.1.4 | [Scout Permission Helper 3.1.4](https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/ScoutPermissionHelper-Portable-3.1.4.zip) |
+**STABLE release:** 4.0.0 | October 27, 2026
 
-[Project website](https://scout-prompt-approver.vercel.app/) · [What's new in Beta 6](BETA-6.md) · [Release history](RELEASE-NOTES.md)
+[Download stable 4.0.0 ZIP](https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/PermissionHelper-Portable-4.0.0.zip) · [SHA-256 checksum](https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/PermissionHelper-Portable-4.0.0.zip.sha256) · [Release notes](RELEASE-4.0.0.md) · [Website](https://scout-prompt-approver.vercel.app/)
 
-Public ZIP downloads require no GitHub sign-in. The packages contain readable PowerShell and batch scripts.
+## What's new
 
-## What's new in Beta 6
+The Scout hidden-permission fix brings an exact selected approval button into view when the conversation is above it, then rescans before approval. The maintainer confirmed the fix works before authorizing stable release. Detect only remains read-only. If the accessibility provider cannot reveal the button, use Scout's down arrow manually.
 
-Beta 6 adds Microsoft 365 Copilot Cowork to the original Scout helper. Choose a window first to see the appropriate options: Allow for Scout, or Create and Approve for Cowork. It supports changing confirmation-card titles, a compact activity view, and scan diagnostics. Pause/Resume/Stop, emergency pause, limits, and duplicate protection remain.
+4.0.0 also includes the previous Beta 7 target profiles, exact session actions and Cowork card matching. The live confirmation covers the Scout fix; it does not establish new live acceptance for every supported target or operation. Always allow and menu controls remain excluded. AI follow-ups are still manual.
 
-**AI follow-ups are still manual. Automatic “next” messages are not included.**
+## Upgrade and start
 
-## Start Beta 6
+1. Stop and close the older helper.
+2. Download and extract both files into a new folder.
+3. Keep Start-PermissionHelper.bat and PermissionHelper.Portable.ps1 together. These names differ from 3.1.x; do not mix old and new files.
+4. Open the intended app, launch Start-PermissionHelper.bat, and select the target and permission labels.
+5. Start in Detect only. Stop, clear Detect only and start again when ready for selected approvals.
 
-1. Close any older helper and extract both files from the Beta ZIP.
-2. Open Scout or the Microsoft 365 Copilot desktop app.
-3. Run `Start-PermissionHelper.bat` and select the intended window.
-4. Choose the permission buttons and start with Detect only checked.
-5. To enable clicking, Stop, clear Detect only, then Start again.
+Check for updates in existing stable and beta installations now offers 4.0.0. Updating requires extracting the new package and restarting; Refresh does not reload code. stable.json, latest.json and beta.json intentionally offer the same stable package. New installations use stable.json for future updates.
 
-Keep `Start-PermissionHelper.bat` and `PermissionHelper.Portable.ps1` together. The stable 3.1.4 package uses the older `Start-ScoutPermissionHelper.bat` launcher and supports Scout only.
-
-Windows 10/11, Windows PowerShell 5.1, and an unlocked desktop are required. Stop before changing settings. Closing the helper stops its worker; minimizing keeps it running.
+Windows 10/11, Windows PowerShell 5.1 and an unlocked desktop are required. No installer, administrator access or GitHub sign-in is needed to download. Pause/Resume/Stop, emergency pause, limits and duplicate protection remain.
 
 ## Scope and logs
 
-Cowork's selected Create/Approve confirmations are handled regardless of the operation or displayed risk label. Matching-card and selected-window checks apply. Always allow and menu controls are excluded. Use the helper for work whose scope you have reviewed. A successful button invocation does not establish backend success.
+Use the helper only for work whose scope you have reviewed. Button labels do not establish the underlying operation, and invocation does not establish backend success. Cowork's selected Create/Approve confirmations are handled regardless of the displayed risk label, with matching-card and selected-window checks.
 
-Open logs shows local records under `%LOCALAPPDATA%\\ScoutPermissionHelper\\Portable\\Runs`. Diagnostics can include control labels, local paths, and process identities. Logs remain until removed.
+Local logs remain under %LOCALAPPDATA%/ScoutPermissionHelper/Portable/Runs until removed. Diagnostics can include control labels, local paths and process identities.
 
-## Verify Beta 6
+## Previous packages
 
-[Beta checksum file](https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/PermissionHelper-Portable-4.0.0-beta.6.zip.sha256)
-
-```powershell
-Get-FileHash .\\PermissionHelper-Portable-4.0.0-beta.6.zip -Algorithm SHA256
-```
-
-Expected: `a3b783491f7c1cad05582e019e7bb963c69422ef6f7733bfd9b85a44f336d769`
-
-[Stable 3.1.4 checksum](https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/ScoutPermissionHelper-Portable-3.1.4.zip.sha256)
+[Beta 6](https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/PermissionHelper-Portable-4.0.0-beta.6.zip) · [Scout-only 3.1.4](https://github.com/cheapskatechangar/-scout-helper-downloads/raw/refs/heads/main/dist/ScoutPermissionHelper-Portable-3.1.4.zip) · [Release history](RELEASE-NOTES.md)
 
 Independent project. Not affiliated with or endorsed by Microsoft.
